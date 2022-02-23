@@ -1,0 +1,23 @@
+{
+  "name": "cypress-automation-infra",
+  "version": "1.0.0",
+  "description": "This repository is all about creating, running and verifying automated UI tests on UI products <br>\r using a cutting edge automation tool.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "cypress:open": "cypress open"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eliran-shani/cypress-automation-infra.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/eliran-shani/cypress-automation-infra/issues"
+  },
+  "homepage": "https://github.com/eliran-shani/cypress-automation-infra#readme",
+  "devDependencies": {
+    "cypress": "^9.5.0"
+  }
+}
