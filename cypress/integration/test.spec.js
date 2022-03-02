@@ -20,7 +20,12 @@ describe('Junior SW Engineer Position', () => {
 
         cy.url() !== 'https://www.hiredscore.com/press' ? cy.visit('https://www.hiredscore.com/press') : '';
 
-        cy.get('div').should('have.class', 'featured-posts__card w-dyn-item')
-
+        cy.get('.featured-posts').then(container => {
+            cy.log(container.text());
+            cy.writeFile('/cypress/fixtures/hiredScoreNews.txt', container.text())
+            cy.readFile('/cypress/fixtures/hiredScoreNews.txt').then((text) => {
+                cy.log(text)
+            })
+        })
     })
 })
